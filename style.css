@@ -63,3 +63,72 @@ h1 {
     background: #4CAF50;
     color: white;
 }
+
+#print-container {
+    display: none;
+}
+
+.badge-page {
+    page-break-after: always;
+}
+
+.badge-page:last-child {
+    page-break-after: auto;
+}
+
+.badge-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 96mm);
+    grid-auto-rows: 96mm;
+    gap: 0;
+    height: 289mm;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.badge-circle {
+    width: 96mm;
+    height: 96mm;
+    border-radius: 50%;
+    background: #cc0000;
+    border: 2px solid #111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 8mm;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+.badge-title {
+    font-family: 'Arial MT', Arial, sans-serif;
+    font-size: 30pt;
+    font-weight: 400;
+    line-height: 2;
+}
+
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 4mm;
+    }
+
+    body {
+        background: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    #app {
+        display: none !important;
+    }
+
+    #print-container {
+        display: block !important;
+    }
+}
