@@ -107,9 +107,26 @@ h1 {
 
 .badge-title {
     font-family: 'Arial MT', Arial, sans-serif;
-    font-size: 30pt;
+    font-size: 34pt;
     font-weight: 400;
     line-height: 2;
+}
+/* harga yang dicoret */
+.badge-old {
+    font-family: 'Arial MT', Arial, sans-serif;
+    font-size: 38pt;
+    font-weight: 400;
+    text-decoration: line-through;
+    text-decoration-color: #ffffff;
+    text-decoration-thickness: 20px;
+    margin: 2mm 0;
+}
+
+.badge-new {
+    font-family: 'Arial MT', Arial, sans-serif;
+    font-size: 45pt;
+    font-weight: 900;
+    line-height: 1;
 }
 
 @media print {
