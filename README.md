@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="contoh.png" alt="Preview Badge" width="600">
+  <img src="Manual.png" alt="Preview Badge" width="600">
 </div>
 
 
